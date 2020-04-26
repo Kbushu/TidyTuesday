@@ -8,6 +8,8 @@ ranking <- readr::read_csv("https://raw.githubusercontent.com/sjockers/bbc-best-
 jsonlite::write_json(polls, path = "jspolls.json")
 jsonlite::write_json(ranking, path = "jsranking.json")
 
-# plot --------------------------------------------------------------------
-
+# Not good -----
+# jsonlite::write_json(x = list(polls = polls, ranking = ranking), path = "jsrap.json")
+# Read back
+# jsrap <- jsonlite::read_json(path = "jsrap.json", simplifyVector = TRUE)
 
